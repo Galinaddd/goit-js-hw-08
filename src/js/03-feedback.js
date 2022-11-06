@@ -23,4 +23,5 @@ function onSubmit(ev) {
   ev.preventDefault();
   localStorage.removeItem(KEY_STORAGE);
   ev.currentTarget.reset();
+  console.log(formData);
 }
