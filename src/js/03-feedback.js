@@ -22,5 +22,5 @@ function inputformHandler(ev) {
 function onSubmit(ev) {
   ev.preventDefault();
   localStorage.removeItem(KEY_STORAGE);
-  ev.target.reset();
+  ev.currentTarget.reset();
 }
