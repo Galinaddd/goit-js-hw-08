@@ -19,8 +19,8 @@ function inputformHandler(ev) {
   localStorage.setItem(KEY_STORAGE, JSON.stringify(formData));
 }
 
-function onSubmit() {
-  console.log({ ...formData });
+function onSubmit(ev) {
+  ev.preventDefault();
   localStorage.removeItem(KEY_STORAGE);
-  formRef.reset();
+  ev.target.reset();
 }
